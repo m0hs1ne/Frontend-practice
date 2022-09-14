@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(212, 45%, 89%);
+}
+.container {
+  background-color: white;
+  width: 350px;
+  height: 550px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 1px 1px 20px lightgray;
+  transition: 250ms ease-in-out;
+  img {
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 3%;
+    margin: 0;
+    transition: 250ms ease-in-out;
+  }
+  .text {
+    padding: 0 2rem;
+    text-align: center;
+    margin: 1rem 0;
+    visibility: visible;
+    opacity: 1;
+    transition: all 100ms ease-in-out;
+    .title {
+      font-size: 25px;
+      opacity: 1;
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+    }
+    .des {
+      margin: 1rem 0;
+      opacity: 1;
+      font-size: 17px;
+      font-family: "Outfit", sans-serif;
+      color: hsl(220, 15%, 55%);
+    }
+  }
+  &:hover {
+    width: 400px;
+    height: 400px;
+    .text {
+      opacity: 0;
+      visibility: hidden;
+    }
+    img {
+      margin-top: 170px;
+      margin-bottom: 0;
+    }
+  }
+}
